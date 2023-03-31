@@ -1,6 +1,23 @@
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+#content-wrap {
+  padding-bottom: 2.5rem; /* Footer height */
+}
+
+#footer {
+  bottom: 0;
+  width: 100vh;
+  border: 1px solid red;
+  display: inline;
+  text-align: center;
+  position: relative;
+}
 
 div {
-    border: 1px solid red;
+  border: 1px solid red;
 }
 
 body {
@@ -8,26 +25,23 @@ body {
 }
 
 .main-page {
-    display: flex;
-    flex-direction: column;
-
+  display: flex;
+  flex-direction: column;
 }
 
-
 .hero {
-
 }
 
 .main-button {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
-.footer {
-  position: absolute;
-  bottom: 10;
-  width: 100%;
-  height: 2.5rem;
+.column-right {
+  float: right;
+  display: flex;
+  flex-direction: row;
+  padding: 20px 16px;
 }
 
 a {
@@ -65,4 +79,10 @@ a {
 
 .cta-button:active {
   background-color: #5c2573;
+}
+.column-left {
+  float: left;
+  display: flex;
+  flex-direction: row;
+  padding: 20px 16px;
 }
