@@ -86,3 +86,10 @@ a {
   flex-direction: row;
   padding: 20px 16px;
 }
+
+.column-right {
+  float: right;
+  display: flex;
+  flex-direction: row;
+  padding: 20px 16px;
+}
