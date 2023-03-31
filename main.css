@@ -3,6 +3,10 @@ div {
     border: 1px solid red;
 }
 
+body {
+  background-color: #c0c0c0;
+}
+
 .main-page {
     display: flex;
     flex-direction: column;
