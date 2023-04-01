@@ -42,6 +42,11 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  opacity: 0.85;
+  transition: all 0.3s ease;
+}
+
 .cta-button {
   color: white;
   border: none;
@@ -58,11 +63,6 @@ a {
   width: 300px;
   background-color: #5c2573;
   margin: 2em 0;
-}
-
-.cta-button:hover {
-  opacity: 0.85;
-  transition: all 0.7s ease;
 }
 
 .cta-button:focus {
@@ -83,4 +83,47 @@ a {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+/* #endregion */
+
+/* footer socials */
+/* #region */
+.socials {
+  display: flex;
+}
+
+.fa {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 50px;
+  width: 50px;
+  background-size: cover;
+  background-position: center center;
+  margin: 0 10px;
+}
+
+.fa:hover {
+}
+
+.fa:focus {
+}
+
+.fa:active {
+}
+
+.fa-facebook {
+  background-image: url("./public/assets/240x240facebook.png");
+}
+
+.fa-twitter {
+  background-image: url("./public/assets/240x240twitter.png");
+}
+
+.fa-pinterest {
+  background-image: url("./public/assets/240x240pinterest.png");
+}
+
+.fa-instagram {
+  background-image: url("./public/assets/240x240instagram.png");
+}
 /* #endregion */
