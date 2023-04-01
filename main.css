@@ -181,6 +181,11 @@ footer {
   background-size: cover;
   background-position: center center;
 }
+.modal-top-close-icon:hover {
+  background-image: url("./public/assets/240x240-x-filled.png");
+  transition: all 0.4s ease;
+}
+
 .modal-copy {
   margin: 1em;
   overflow: scroll;
@@ -190,11 +195,6 @@ footer {
 .modal-close {
   display: flex;
   justify-content: center;
-}
-
-.modal-top-close:hover {
-  background-image: url("./public/assets/240x240-x-filled.png");
-  transition: all 0.4s ease;
 }
 
 #btn-modal-close {
@@ -208,6 +208,9 @@ footer {
 
 #btn-modal-close:hover {
   opacity: 0.75;
+  transform: translateY(-1px);
+  box-shadow: inset 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
+
   transition: all 0.1s ease;
 }
 
