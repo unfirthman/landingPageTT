@@ -1,3 +1,10 @@
+@media screen and (max-width: 600px) {
+  body footer {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 /* main elements */
 /* #region */
 body {
@@ -10,18 +17,32 @@ body main {
   flex: 1 auto;
 }
 
-<<<<<<< HEAD
-=======
-footer {
+<<<<<<< HEAD ======= footer {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
+
+.disclosures {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.socials {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.contact-line {
+  display: flex;
+  flex-direction: row;
+}
 /* #endregion */
 
-/* #endregion */
 /* link styles */
 /* #region */
+
 .main-button {
   display: flex;
   justify-content: center;
@@ -34,9 +55,18 @@ footer {
   height: 2.5rem;
 }
 
->>>>>>> f781cdf (simple footer edit)
-a {
-  text-decoration: none;
+.disclosures-link {
+  display: flex;
+  font-weight: 200;
+  font-size: 18px;
+  padding-right: 20px;
+}
+
+.socials-link {
+  display: flex;
+  font-weight: 200;
+  font-size: 18px;
+  padding-right: 20px;
 }
 
 a:hover {
