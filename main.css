@@ -64,6 +64,18 @@ footer {
 }
 /* #endregion */
 
+/*footer buttons */
+/* #region */
+button {
+    font-size: 16px;
+    font-weight: 300;
+    border: none;
+    background: transparent;
+}
+
+/* #endregion */
+
+
 /* footer socials */
 /* #region */
 .socials {
