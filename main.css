@@ -3,6 +3,11 @@
     display: flex;
     flex-direction: column;
   }
+
+  .socials {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 /* main elements */
