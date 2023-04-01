@@ -3,6 +3,10 @@
     display: flex;
     flex-direction: column;
   }
+  body footer {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 /* main elements */
@@ -17,7 +21,7 @@ body main {
   flex: 1 auto;
 }
 
-<<<<<<< HEAD ======= footer {
+footer {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -46,11 +50,17 @@ body main {
 .main-button {
   display: flex;
   justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .footer {
   position: absolute;
   bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+  position: absolute;
+  bottom: 10;
   width: 100%;
   height: 2.5rem;
 }
@@ -214,5 +224,48 @@ footer {
     width: 25px;
     margin: 0 5px;
   }
+}
+/* #endregion */
+
+/* footer socials */
+/* #region */
+.socials {
+  display: flex;
+}
+
+.fa {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 50px;
+  width: 50px;
+  background-size: cover;
+  background-position: center center;
+  margin: 0 10px;
+}
+
+.fa:hover {
+}
+
+.fa:focus {
+}
+
+.fa:active {
+}
+
+.fa-facebook {
+  background-image: url("./public/assets/240x240facebook.png");
+}
+
+.fa-twitter {
+  background-image: url("./public/assets/240x240twitter.png");
+}
+
+.fa-pinterest {
+  background-image: url("./public/assets/240x240pinterest.png");
+}
+
+.fa-instagram {
+  background-image: url("./public/assets/240x240instagram.png");
 }
 /* #endregion */
