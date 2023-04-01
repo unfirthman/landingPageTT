@@ -1,10 +1,3 @@
-@media screen and (max-width: 600px) {
-  body footer {
-    display: flex;
-    flex-direction: column;
-  }
-}
-
 /* main elements */
 /* #region */
 body {
@@ -40,13 +33,13 @@ footer {
 }
 /* #endregion */
 
+/* #endregion */
 /* link styles */
 /* #region */
 .main-link {
   display: flex;
   justify-content: center;
 }
-/* MARK FOR DELETION */
 
 .cta-link {
   color: white;
