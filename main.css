@@ -17,6 +17,7 @@ a {
 a:hover {
   opacity: 0.85;
   transition: all 0.3s ease;
+  transform: scale(1.1);
 }
 
 a:focus {
@@ -116,6 +117,12 @@ footer {
   margin: 0 10px;
 }
 
+.fa:hover {
+  opacity: 0.75;
+  transition: all 0.3s ease;
+  transform: scale(1.1);
+}
+
 .fa:active {
   opacity: 0.85;
   transition: all 0.3s ease;
@@ -150,7 +157,7 @@ footer {
   box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.6);
   color: #444444;
   font-size: 18px;
-  display: flex;
+  display: none;
   flex-direction: column;
 }
 
@@ -159,21 +166,13 @@ footer {
   flex-direction: row;
 }
 
-.modal-top-title {
-  display: flex;
-  /* flex-direction: row; */
-  flex-grow: 1;
-  flex-basis: 0;
-  margin-left: 1em;
-}
-
 .modal-top-close {
   display: flex;
   flex-grow: 1;
   flex-basis: 0;
 }
 
-.modal-top-close-icon {
+#modal-top-close-icon {
   height: 25px;
   width: 25px;
   margin: 1em 1em 0 auto;
@@ -181,8 +180,9 @@ footer {
   background-size: cover;
   background-position: center center;
 }
-.modal-top-close-icon:hover {
+#modal-top-close-icon:hover {
   background-image: url("./public/assets/240x240-x-filled.png");
+  transform: scale(1.1);
   transition: all 0.4s ease;
 }
 
@@ -208,9 +208,9 @@ footer {
 
 #btn-modal-close:hover {
   opacity: 0.75;
-  transform: translateY(-1px);
+  /* transform: translateY(-1px); */
   box-shadow: inset 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
-
+  transform: scale(1.1);
   transition: all 0.1s ease;
 }
 
@@ -248,6 +248,7 @@ footer {
   .socials {
     display: flex;
     justify-content: center;
+    margin-top: 2em;
   }
 
   .modal-overlay {
@@ -271,7 +272,7 @@ footer {
   }
 
   .modal-copy {
-    margin: 0 0.15em;
+    margin: 1em 0.15em;
     padding: 0 0.5em;
   }
 
