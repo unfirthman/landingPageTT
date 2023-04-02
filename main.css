@@ -173,4 +173,16 @@ footer {
   }
 }
 
+/* iphone 4 */
+@media screen and (max-width: 350px) {
+  .cta-link {
+    width: 250px;
+  }
+
+  .fa {
+    height: 25px;
+    width: 25px;
+    margin: 0 5px;
+  }
+}
 /* #endregion */
