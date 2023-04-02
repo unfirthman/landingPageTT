@@ -25,15 +25,22 @@ a:focus {
   box-shadow: 0 0 0 2px #c0c0c0;
 }
 
+button {
+  font-size: 16px;
+  font-weight: 300;
+  border: none;
+  background: transparent;
+}
+
 footer {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   margin: 20px 0;
 }
-/* #endregion */
 
 /* #endregion */
+
 /* link styles */
 /* #region */
 .main-link {
@@ -59,13 +66,41 @@ footer {
   margin: 2em 0;
 }
 
+.cta-link:focus {
+  outline-color: transparent;
+  outline-style: solid;
+  box-shadow: 0 0 0 2px #c0c0c0;
+}
+
 .cta-link:active {
   background-color: #5c2573;
 }
+
 /* #endregion */
 
-/* footer socials */
+/* footer */
 /* #region */
+
+/* disclosures */
+/* #region */
+.disclosures {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.disclosures-link {
+  display: flex;
+  font-weight: 200;
+  font-size: 18px;
+  padding-right: 20px;
+}
+
+/* #endregion */
+
+/* socials */
+/* #region */
+
 .socials {
   display: flex;
 }
@@ -103,8 +138,29 @@ footer {
 }
 /* #endregion */
 
+.contact-line {
+  display: flex;
+  flex-direction: row;
+}
+
+/* #endregion */
+
 /* media queries */
 /* #region */
+
+/* iphone 4 */
+@media screen and (max-width: 350px) {
+  .cta-link {
+    width: 250px;
+  }
+
+  .fa {
+    height: 25px;
+    width: 25px;
+    margin: 0 5px;
+  }
+}
+
 @media screen and (max-width: 600px) {
   body footer {
     display: flex;
