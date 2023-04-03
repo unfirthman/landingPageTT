@@ -17,6 +17,7 @@ a {
 a:hover {
   opacity: 0.85;
   transition: all 0.3s ease;
+  transform: scale(1.1);
 }
 
 a:focus {
@@ -116,6 +117,12 @@ footer {
   margin: 0 10px;
 }
 
+.fa:hover {
+  opacity: 0.75;
+  transition: all 0.3s ease;
+  transform: scale(1.1);
+}
+
 .fa:active {
   opacity: 0.85;
   transition: all 0.3s ease;
@@ -136,6 +143,77 @@ footer {
 .fa-instagram {
   background-image: url("./public/assets/240x240instagram.png");
 }
+/* #endregion */
+
+/* modal */
+/* #region */
+.modal-overlay {
+  position: absolute;
+  top: 75%;
+  left: 5em;
+  right: 5em;
+  z-index: 5;
+  background-color: white;
+  box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.6);
+  color: #444444;
+  font-size: 18px;
+  display: none;
+  flex-direction: column;
+}
+
+.modal-top {
+  display: flex;
+  flex-direction: row;
+}
+
+.modal-top-close {
+  display: flex;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+
+#modal-top-close-icon {
+  height: 25px;
+  width: 25px;
+  margin: 1em 1em 0 auto;
+  background-image: url("./public/assets/240x240-x.png");
+  background-size: cover;
+  background-position: center center;
+}
+#modal-top-close-icon:hover {
+  background-image: url("./public/assets/240x240-x-filled.png");
+  transform: scale(1.1);
+  transition: all 0.4s ease;
+}
+
+.modal-copy {
+  margin: 1em;
+  overflow: scroll;
+  max-height: 200px;
+}
+
+.modal-close {
+  display: flex;
+  justify-content: center;
+}
+
+#btn-modal-close {
+  background-color: #5c2573;
+  color: #fff;
+  border: none;
+  margin: 1em 0;
+  padding: 0.5em;
+  font-size: 14px;
+}
+
+#btn-modal-close:hover {
+  opacity: 0.75;
+  /* transform: translateY(-1px); */
+  box-shadow: inset 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
+  transform: scale(1.1);
+  transition: all 0.1s ease;
+}
+
 /* #endregion */
 
 .contact-line {
@@ -170,6 +248,14 @@ footer {
   .socials {
     display: flex;
     justify-content: center;
+    margin-top: 2em;
+  }
+
+  .modal-overlay {
+    top: 15%;
+    left: 3em;
+    right: 3em;
+    font-size: 14px;
   }
 }
 
@@ -183,6 +269,21 @@ footer {
     height: 25px;
     width: 25px;
     margin: 0 5px;
+  }
+
+  .modal-copy {
+    margin: 1em 0.15em;
+    padding: 0 0.5em;
+  }
+
+  #btn-modal-close {
+    margin: 0.5em 0;
+  }
+
+  .modal-top-close {
+    height: 20px;
+    width: 20px;
+    margin: 0.5em 0.5em 0 auto;
   }
 }
 /* #endregion */
